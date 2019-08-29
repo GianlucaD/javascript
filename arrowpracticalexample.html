@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const smartPhones = [
+            { name: 'iphone', price: 649 },
+            { name: 'Galaxy S6', price: 576 },
+            { name: 'Galaxy Note 5', price: 489 }
+        ];
+
+        // no arrow
+        var prices = smartPhones.map(function (smartPhone) {
+            return smartPhone.price;
+        });
+
+        console.log(prices); // [649, 576, 489]
+        // Arrow
+        const prices2 = smartPhones.map(smartPhone => smartPhone.price);
+        console.log(prices2); // [649, 576, 489]
+        document.write(prices2);
+    </script>
+</body>
+
+</html>
