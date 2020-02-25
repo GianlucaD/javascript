@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="formData">
+        Name: <input type="text" name="name"><br>
+        Salary: <input type="text" name="salary"><br>
+        Age: <input type="text" name="age"><br>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("submit").addEventListener("click", function (event) {
+            submitForm();
+            event.preventDefault();
+        });
+        function submitForm() {
+            var formData = new FormData(document.getElementById('formData'));
+            let myJson = JSON.stringify(Object.fromEntries(formData));
+            fetch("http://dummy.restapiexample.com/api/v1/create",
+                {
+                    method: "POST",
+                    body: myJson,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(json => console.log("json:", json))
+                .catch(error => console.log("error:", error));
+        };
+   </script>
+
+</body>
+
+</html>
