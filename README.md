@@ -1,2 +1,2 @@
 # javascript
-JavaScript snipped
+JavaScript snippeds
