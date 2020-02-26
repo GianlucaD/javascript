@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024,  initial-scale=1.0" />
+    <title>loop thru json array</title>
+  </head>
+  <body>
+    <script>
+      let data = [
+        {
+          id: 1,
+          first_name: "Anastasia",
+          last_name: "Benzie",
+          email: "abenzie0@bbc.co.uk",
+          gender: "Female",
+          ip_address: "190.243.10.139"
+        },
+        {
+          id: 2,
+          first_name: "Trev",
+          last_name: "Gonzalo",
+          email: "tgonzalo1@google.com.au",
+          gender: "Male",
+          ip_address: "150.176.25.76"
+        },
+        {
+          id: 3,
+          first_name: "Leo",
+          last_name: "Caen",
+          email: "lcaen2@cmu.edu",
+          gender: "Male",
+          ip_address: "79.182.43.142"
+        },
+        {
+          id: 4,
+          first_name: "Rodina",
+          last_name: "Gunther",
+          email: "rgunther3@whitehouse.gov",
+          gender: "Female",
+          ip_address: "20.166.164.30"
+        },
+        {
+          id: 5,
+          first_name: "Felicia",
+          last_name: "Village",
+          email: "fvillage4@blog.com",
+          gender: "Female",
+          ip_address: "107.80.166.137"
+        },
+        {
+          id: 6,
+          first_name: "Barney",
+          last_name: "Ladlow",
+          email: "bladlow5@exblog.jp",
+          gender: "Male",
+          ip_address: "144.230.214.196"
+        },
+        {
+          id: 7,
+          first_name: "Babs",
+          last_name: "Michelle",
+          email: "bmichelle6@blog.com",
+          gender: "Female",
+          ip_address: "69.0.105.174"
+        },
+        {
+          id: 8,
+          first_name: "Melodee",
+          last_name: "Knutsen",
+          email: "mknutsen7@cnn.com",
+          gender: "Female",
+          ip_address: "17.161.27.213"
+        },
+        {
+          id: 9,
+          first_name: "Steffane",
+          last_name: "Pagan",
+          email: "spagan8@netlog.com",
+          gender: "Female",
+          ip_address: "248.25.14.139"
+        },
+        {
+          id: 10,
+          first_name: "Marcille",
+          last_name: "Guyer",
+          email: "mguyer9@unblog.fr",
+          gender: "Female",
+          ip_address: "21.102.143.234"
+        },
+        {
+          id: 11,
+          first_name: "Aurelie",
+          last_name: "McAlindon",
+          email: "amcalindona@storify.com",
+          gender: "Female",
+          ip_address: "65.208.237.100"
+        },
+        {
+          id: 12,
+          first_name: "Tate",
+          last_name: "Mepsted",
+          email: "tmepstedb@paginegialle.it",
+          gender: "Female",
+          ip_address: "143.195.46.208"
+        },
+        {
+          id: 13,
+          first_name: "Regina",
+          last_name: "Cringle",
+          email: "rcringlec@bbb.org",
+          gender: "Female",
+          ip_address: "25.156.102.234"
+        },
+        {
+          id: 14,
+          first_name: "Calypso",
+          last_name: "Cheshir",
+          email: "ccheshird@naver.com",
+          gender: "Female",
+          ip_address: "100.62.6.242"
+        },
+        {
+          id: 15,
+          first_name: "Costanza",
+          last_name: "Jacks",
+          email: "cjackse@loc.gov",
+          gender: "Female",
+          ip_address: "108.211.124.148"
+        },
+        {
+          id: 16,
+          first_name: "Kelsy",
+          last_name: "Cardinale",
+          email: "kcardinalef@rediff.com",
+          gender: "Female",
+          ip_address: "213.25.253.19"
+        },
+        {
+          id: 17,
+          first_name: "Levey",
+          last_name: "Metzing",
+          email: "lmetzingg@comsenz.com",
+          gender: "Male",
+          ip_address: "44.5.143.243"
+        },
+        {
+          id: 18,
+          first_name: "Jamil",
+          last_name: "Jewks",
+          email: "jjewksh@cbslocal.com",
+          gender: "Male",
+          ip_address: "128.56.199.234"
+        },
+        {
+          id: 19,
+          first_name: "Prince",
+          last_name: "Dalglish",
+          email: "pdalglishi@dropbox.com",
+          gender: "Male",
+          ip_address: "50.103.13.51"
+        },
+        {
+          id: 20,
+          first_name: "Jeannine",
+          last_name: "Jacob",
+          email: "jjacobj@blogspot.com",
+          gender: "Female",
+          ip_address: "91.20.81.67"
+        }
+      ];
+
+      for (let index = 0; index < data.length; index++) {
+        const row = data[index];
+        document.write("<p>" + row.first_name + "</p>");
+      }
+    </script>
+  </body>
+</html>
