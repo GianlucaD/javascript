@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024, initial-scale=1.0" />
+    <title>Async</title>
+  </head>
+  <body>
+    <script>
+      const myPromise = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("Completed"), 4000);
+      });
+
+      async function foo() {
+        const result = await myPromise; // Wait here until the promise settles
+      }
+      var fn = foo();
+      fn.then(e => {
+        console.log("ok");
+      });
+    </script>
+  </body>
+</html>

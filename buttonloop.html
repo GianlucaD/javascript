@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024, initial-scale=1.0" />
+    <title>Button Loop</title>
+  </head>
+  <body>
+    <script>
+      // https://gist.github.com/jawache/1385aa370cf0d9dcf009 // Consider the
+      //following code snippet:
+      for (var i = 0; i < 5; i++) {
+        var btn = document.createElement("button");
+        btn.appendChild(document.createTextNode("Button " + i));
+        btn.addEventListener("click", function() {
+          console.log(i);
+        });
+        document.body.appendChild(btn);
+      } // What gets logged to the console when
+      //the user clicks on “Button 4”?
+    </script>
+  </body>
+</html>
