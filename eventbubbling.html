@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <ul onclick="doIt('UL')">
-        <li onclick="doIt('1')">number 1</li>
-        <li onclick="doIt('2')">number 2</li>
-        <li onclick="doIt('3')">number 3</li>
+      <li onclick="doIt('1')">number 1</li>
+      <li onclick="doIt('2')">number 2</li>
+      <li onclick="doIt('3')">number 3</li>
     </ul>
-    
+
     <script>
-    function doIt(param){
+      function doIt(param) {
         alert(param);
-        e.preventDefault();
-    }
+        event.stopPropagation();
+      }
     </script>
-</body>
+  </body>
 </html>
