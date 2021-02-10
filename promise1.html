@@ -1,0 +1,17 @@
+function revertString(word) {
+    var promise = new Promise(function (resolve,reject) {
+        var i = word.length;
+        newword = "";
+        while (i--) {
+            newword += word[i];
+        }
+      if (newword)
+        resolve("It is a success:" + newword)
+      else
+        reject(("It is a failure."));
+    });
+    return promise;
+  }
+
+  revertString("hello").then((word) => console.log(word));
+  
